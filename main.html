@@ -26,11 +26,13 @@
     </div>
 	<div>
      <label for="cars">Car Brands:</label>
-	  <input type="checkbox" value="pleasechooseanoption" name="cars" id="cars" placeholder="Please choose an option" required>
-      BMW: <input type="checkbox" value="BMW" name="cars" id="cars" required>
-      Audi: <input type="checkbox" value="Audi" name="cars" id="cars" required>
-      Mercedez: <input type="checkbox" value="Mercedez" name="cars" id="cars" required>
-    </div>
+       <select name="cars" id="cars">
+       <option value="cars" disabled selected>Car Brands</option>
+       <option value="BMW">BMW</option>
+       <option value="Audi">Audi</option>
+       <option value="Mercedez">Mercedez</option>
+       </select>
+      </div>
     <div>
      <label for="age">Age:</label>
      <input type="number" name="age" id="age" placeholder="Enter Your Age" required>
@@ -48,9 +50,7 @@
      <label for="password">Password:</label>
      <input type="password" name="password" id="password" placeholder="Enter Your Password" required>
     </div>
-	<div>
-     <input type="submit">
-    </div>
+	<button type="submit" value="Submit">Submit</button>
 
 
 	
